@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CustomDevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Custom Device.xsd">
+<XSDVersion Major="2010" Minor="0" Fix="0" Build="0" />
+
+  <AddMenu>
+    <eng>DMM-SWITCH-ScanList</eng>
+    <loc>DMM-SWITCH-ScanList</loc>
+  </AddMenu>
+  <Version>1.0.0</Version>
+  <Type>Inline HW Interface</Type>
+  <MaxOccurrence>1</MaxOccurrence>
+  <MainPageGUID>5d11f4ff-301a-4799-897e-33fee51cc767</MainPageGUID>
+  
+  <InitializationVI>
+    <Type>Action</Type>
+    <Item2Launch>
+      <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\DMM-SWITCH-ScanList\DMM-SWITCH-ScanList Configuration.llb\Initialization VI.vi</Path>
+    </Item2Launch>
+  </InitializationVI>
+  <CustomDeviceVI>
+		<SourceDistribution>
+			<Source>
+				<SupportedTarget>Windows</SupportedTarget>
+				<Source>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\DMM-SWITCH-ScanList\Windows\DMM-SWITCH-ScanList Engine Windows.llb\RT Driver VI.vi</Path>
+				</Source>
+				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\DMM-SWITCH-ScanList\DMM-SWITCH-ScanList Engine Windows.llb\RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>
+			<Source>
+				<SupportedTarget>Pharlap</SupportedTarget>
+				<Source>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\DMM-SWITCH-ScanList\PharLap\DMM-SWITCH-ScanList Engine Pharlap.llb\RT Driver VI.vi</Path>
+				</Source>
+				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\DMM-SWITCH-ScanList\DMM-SWITCH-ScanList Engine Pharlap.llb\RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>
+			<Source>
+				<SupportedTarget>VxWorks</SupportedTarget>
+				<Source>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\DMM-SWITCH-ScanList\VxWorks\DMM-SWITCH-ScanList Engine VxWorks.llb\RT Driver VI.vi</Path>
+				</Source>
+				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\DMM-SWITCH-ScanList\DMM-SWITCH-ScanList Engine VxWorks.llb\RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>	
+			<Source>
+				<SupportedTarget>Linux_32_ARM</SupportedTarget>
+				<Source>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\DMM-SWITCH-ScanList\Linux_32_ARM\DMM-SWITCH-ScanList Engine LinuxARM.llb\RT Driver VI.vi</Path>
+				</Source>
+				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\DMM-SWITCH-ScanList\DMM-SWITCH-ScanList Engine LinuxARM.llb\RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>
+			<Source>
+				<SupportedTarget>Linux_x64</SupportedTarget>
+				<Source>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\DMM-SWITCH-ScanList\Linux_x64\DMM-SWITCH-ScanList Engine Linux64.llb\RT Driver VI.vi</Path>
+				</Source>
+				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\DMM-SWITCH-ScanList\DMM-SWITCH-ScanList Engine Linux64.llb\RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>
+		</SourceDistribution>
+	</CustomDeviceVI>
+  <Dependencies />
+  <Pages>
+	
+    <Page>
+	
+	
+      <Name>
+        <eng>DMM-SWITCH-ScanList</eng>
+        <loc>DMM-SWITCH-ScanList</loc>
+      </Name>
+	  
+      <GUID>5d11f4ff-301a-4799-897e-33fee51cc767</GUID>
+      <Glyph>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\DMM-SWITCH-ScanList\Data\PXI_target.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\DMM-SWITCH-ScanList\DMM-SWITCH-ScanList Configuration.llb\Main Page.vi</Path>
+      </Item2Launch>
+	  <ActionVIOnCompile>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\DMM-SWITCH-ScanList\DMM-SWITCH-ScanList Configuration.llb\ActionVIOnCompile.vi</Path>
+      </ActionVIOnCompile>
+	  
+    </Page>
+	
+	<Page>
+	
+     <Name>
+        <eng>Configuration</eng>
+        <loc>Configuration</loc>
+      </Name>
+	  <DeleteProtection>true</DeleteProtection>
+      <GUID>B26D2BE3-134A-46DA-8243-072CF230D422</GUID>
+      <Glyph>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\DMM-SWITCH-ScanList\Data\Gear.png</Path>
+		</Glyph> 
+	  <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\DMM-SWITCH-ScanList\DMM-SWITCH-ScanList Configuration.llb\Configuration.vi</Path>
+      </Item2Launch>		
+    </Page>
+	
+	<Page>
+	
+      <Name>
+        <eng>DMM Configuration</eng>
+        <loc>DMM Configuration</loc>
+      </Name>
+	  <DeleteProtection>true</DeleteProtection>
+      <GUID>F70F49EF-EA01-4EE0-9516-062BB723C6FA</GUID>
+      <Glyph>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\DMM-SWITCH-ScanList\Data\digitalMultiMeter.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\DMM-SWITCH-ScanList\DMM-SWITCH-ScanList Configuration.llb\DMM Configuration.vi</Path>
+		
+      </Item2Launch>
+	  
+    </Page>
+	
+	<Page>	
+	
+      <Name>
+        <eng>Switch Configuration</eng>
+        <loc>Switch Configuration</loc>
+      </Name>
+	  <DeleteProtection>true</DeleteProtection>
+      <GUID>2CD8A1A5-3D89-4F04-ABA6-DE3C84A9E458</GUID>
+      <Glyph>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\DMM-SWITCH-ScanList\Data\Switch.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\DMM-SWITCH-ScanList\DMM-SWITCH-ScanList Configuration.llb\Switch Configuration.vi</Path>
+      </Item2Launch>
+    </Page>
+	
+	<Page>	
+      <Name>
+        <eng>Triggers Configuration</eng>
+        <loc>Triggers Configuration</loc>
+      </Name>
+	  <DeleteProtection>true</DeleteProtection>
+      <GUID>5260A2FF-FA1A-4B8D-AACD-153CF615834C</GUID>
+      <Glyph>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\DMM-SWITCH-ScanList\Data\trigger2.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\DMM-SWITCH-ScanList\DMM-SWITCH-ScanList Configuration.llb\Triggering Configuration.vi</Path>
+		
+      </Item2Launch>
+    </Page>
+	
+	<Page>
+	
+	 <Name>
+        <eng>Input Channels</eng>
+        <loc>Input Channels</loc>
+      </Name>
+	  <DeleteProtection>true</DeleteProtection>
+      <GUID>247BA5C3-EBA8-4DAA-B4FA-14FAA185E47F</GUID>
+      <Glyph>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\DMM-SWITCH-ScanList\Data\ai.png</Path>
+		</Glyph> 
+	  <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\DMM-SWITCH-ScanList\DMM-SWITCH-ScanList Configuration.llb\Input Channels.vi</Path>
+      </Item2Launch>		
+    </Page>
+	
+	<Page>
+	
+	 <Name>
+        <eng>Scan Trigger</eng>
+        <loc>Scan Trigger</loc>
+      </Name>
+	  <DeleteProtection>true</DeleteProtection>
+      <GUID>BF431E33-4AEF-4E25-B78B-DE612453E2F4</GUID>
+      <Glyph>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\DMM-SWITCH-ScanList\Data\trigger.png</Path>
+		</Glyph> 
+	  <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\DMM-SWITCH-ScanList\DMM-SWITCH-ScanList Configuration.llb\Scan Trigger.vi</Path>
+      </Item2Launch>		
+    </Page>
+	
+	<Page>
+	 <Name>
+        <eng>Measurement Channels</eng>
+        <loc>Measurement Channels</loc>
+      </Name>
+	  <DeleteProtection>true</DeleteProtection>
+      <GUID>3C436B89-AF05-4727-AB74-6F367A82FA29</GUID>
+      <Glyph>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\DMM-SWITCH-ScanList\Data\ao.png</Path>
+		</Glyph> 
+	  <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\DMM-SWITCH-ScanList\DMM-SWITCH-ScanList Configuration.llb\Measurement Channels.vi</Path>
+      </Item2Launch>		
+    </Page>
+	
+	<Page>
+	 <Name>
+        <eng>Runtime Status</eng>
+        <loc>Runtime Status</loc>
+      </Name>
+	  <DeleteProtection>true</DeleteProtection>
+      <GUID>813CC596-1D51-426F-B292-57396C68DA7F</GUID>
+      <Glyph>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\DMM-SWITCH-ScanList\Data\status2.png</Path>
+		</Glyph> 
+	  <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\DMM-SWITCH-ScanList\DMM-SWITCH-ScanList Configuration.llb\Runtime Status.vi</Path>
+      </Item2Launch>		
+    </Page>
+	
+	<Page>
+	
+	 <Name>
+        <eng>Initialization Error Code</eng>
+        <loc>Initialization Error Code</loc>
+      </Name>
+	  <DeleteProtection>true</DeleteProtection>
+      <GUID>8857E528-F83D-4508-97E1-29E8302E9186</GUID>
+      <Glyph>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\DMM-SWITCH-ScanList\Data\status2.png</Path>
+		</Glyph> 
+	  <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\DMM-SWITCH-ScanList\DMM-SWITCH-ScanList Configuration.llb\Initialization Error Code.vi</Path>
+      </Item2Launch>		
+    </Page>
+	<Page>
+	
+	 <Name>
+        <eng>Initialization Error Status</eng>
+        <loc>Initialization Error Status</loc>
+      </Name>
+	  <DeleteProtection>true</DeleteProtection>
+      <GUID>19DD4FF6-6CCB-4AA9-9708-947C280EC5A2</GUID>
+      <Glyph>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\DMM-SWITCH-ScanList\Data\status2.png</Path>
+		</Glyph> 
+	  <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\DMM-SWITCH-ScanList\DMM-SWITCH-ScanList Configuration.llb\Initialization Error Status.vi</Path>
+      </Item2Launch>		
+    </Page>
+	
+	<Page>
+	
+	 <Name>
+        <eng>Runtime Error Code</eng>
+        <loc>Runtime Error Code</loc>
+      </Name>
+	  <DeleteProtection>true</DeleteProtection>
+      <GUID>BAD17615-104F-4066-9CB0-17953AC0158B</GUID>
+      <Glyph>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\DMM-SWITCH-ScanList\Data\status2.png</Path>
+		</Glyph> 
+	  <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\DMM-SWITCH-ScanList\DMM-SWITCH-ScanList Configuration.llb\Runtime Error Code.vi</Path>
+      </Item2Launch>		
+    </Page>
+	<Page>
+	
+	 <Name>
+        <eng>Runtime Error Status</eng>
+        <loc>Runtime Error Status</loc>
+      </Name>
+	  <DeleteProtection>true</DeleteProtection>
+      <GUID>B62133FF-5E62-4146-9DEF-9FF3B26667C3</GUID>
+      <Glyph>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\DMM-SWITCH-ScanList\Data\status2.png</Path>
+		</Glyph> 
+	  <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\DMM-SWITCH-ScanList\DMM-SWITCH-ScanList Configuration.llb\Runtime Error Status.vi</Path>
+      </Item2Launch>		
+    </Page>
+	<Page>
+	
+	 <Name>
+        <eng>Runtime Error Iteration</eng>
+        <loc>Runtime Error Iteration</loc>
+      </Name>
+	  <DeleteProtection>true</DeleteProtection>
+      <GUID>E17AAD60-E8EE-42C3-8326-7CFE40935FDE</GUID>
+      <Glyph>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\DMM-SWITCH-ScanList\Data\status2.png</Path>
+		</Glyph> 
+	  <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\DMM-SWITCH-ScanList\DMM-SWITCH-ScanList Configuration.llb\Runtime Iteration.vi</Path>
+      </Item2Launch>		
+    </Page>
+	
+    
+  </Pages>
+  <CustomXML>
+    <Dummy></Dummy>
+  </CustomXML>
+</CustomDevice>
